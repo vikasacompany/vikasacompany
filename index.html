@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vikasa Company - Koper Pintar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header dengan menu navigasi -->
+    <header>
+        <!-- Tombol hamburger untuk toggle menu -->
+        <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+        <!-- Menu navigasi yang akan tampil saat tombol hamburger diklik -->
+        <nav id="menu">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Section Home -->
+    <section id="home">
+        <h1>Welcome to Vikasa Company</h1>
+        <p>Your trusted partner in innovative travel solutions</p>
+    
+    </section>
+
+    <!-- Section Products -->
+    <section id="products">
+        <h2>Our Smart Luggage</h2>
+        <div class="product">
+            <img src="koper coy.jpg" alt="Smart Luggage">
+            <h3>Smart Luggage Model A</h3>
+            <p>Features, price, and details...</p>
+        </div>
+    </section>
+
+    <!-- Section About -->
+    <section id="about">
+        <h2>About Vikasa</h2>
+        <h2>Our mission, vision, and team...</h2>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="submit_form.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Vikasa Company</p>
+    </footer>
+
+    <button id="scrollToTopBtn" onclick="topFunction()">Scroll to Top</button>
+
+    <!-- Menghubungkan ke file JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
