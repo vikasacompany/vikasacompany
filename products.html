@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vikasa Company - Products</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <!-- Tombol Hamburger Menu -->
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <nav id="menu">
+            <ul>
+                <li><a href="https://vikasacompany.github.io/vikasacompany/" onclick="closeMenu()">Home</a></li>
+                <li><a href="products.html" onclick="closeMenu()">Products</a></li>
+                <li><a href="about.html" onclick="closeMenu()">About</a></li>
+                <li><a href="contact.html" onclick="closeMenu()">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Tempat untuk menyisipkan header -->
+    <div id="header-placeholder"></div>
+
+   <!-- Product Section -->
+<section id="products">
+    <h2 class="section-title2">Our Smart Luggage</h2>
+    <div class="product-container">
+        <!-- Product 1 -->
+        <div class="product">
+            <img src="koper coy.jpg" alt="Smart Luggage Model A">
+            <h3>Smart Luggage Model A</h3>
+            <p>Track your luggage, charge your devices, and more with Vikasa's Model A. It comes with built-in GPS, a power bank, and a durable design perfect for modern travelers.</p>
+            <div class="price">
+                <span class="new-price">Rp3.000.000</span>
+                <span class="old-price">Rp3.500.000</span>
+            </div>
+            <div class="rating">
+                &#9733;&#9733;&#9733;&#9733;&#9734; (4/5)
+            </div>
+            <a href="products.html" class="cta-btn">See Details</a>
+            <a href="products.html" class="learn-more-btn">Learn More</a>
+        </div>
+        <!-- Product 2 -->
+        <div class="product">
+            <img src="koper coy.jpg" alt="Smart Luggage Model B">
+            <h3>Smart Luggage Model B</h3>
+            <p>Experience the future of travel with Model B – equipped with the latest tech features like fingerprint recognition, a built-in scale, and Bluetooth tracking.</p>
+            <div class="price">
+                <span class="new-price">Rp4.000.000</span>
+                <span class="old-price">Rp4.500.000</span>
+            </div>
+            <div class="rating">
+                &#9733;&#9733;&#9733;&#9733;&#9733; (5/5)
+            </div>
+            <a href="products.html" class="cta-btn">See Details</a>
+            <a href="products.html" class="learn-more-btn">Learn More</a>
+        </div>
+    </div>
+</section>
+
+   <script src="script.js"></script>
+</body>
+</html>
