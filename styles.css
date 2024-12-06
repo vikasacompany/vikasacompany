@@ -16,7 +16,7 @@ body {
 /* Header */
 header {
     background-color: #1e3d58;
-    padding: 1rem 2rem; /* Menambahkan padding horizontal untuk ruang lebih */
+    padding: 1rem 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -24,16 +24,16 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    z-index: 10; /* Pastikan header berada di atas konten */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Memberikan efek bayangan pada header */
+    z-index: 10;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Logo */
 header .logo h1 {
-    font-size: 2.5em; /* Menambah ukuran font untuk logo */
+    font-size: 2.5em;
     color: white;
-    letter-spacing: 2px; /* Menambah jarak antar huruf untuk kesan elegan */
-    text-transform: uppercase; /* Membuat teks logo lebih berkelas */
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
 /* Tombol Hamburger Menu */
@@ -41,8 +41,8 @@ header .logo h1 {
     font-size: 30px;
     color: white;
     cursor: pointer;
-    display: block; /* Menampilkan tombol hamburger di semua ukuran layar */
-    z-index: 11; /* Pastikan tombol hamburger berada di atas menu */
+    display: block;
+    z-index: 11;
 }
 
 .menu-toggle .bar {
@@ -63,8 +63,8 @@ nav {
     height: 100%;
     width: 0;
     padding-top: 50px;
-    transition: width 0.5s ease, opacity 0.5s ease; /* Menambah animasi opacity untuk keluar masuk yang lebih halus */
-    z-index: 10; /* Pastikan menu berada di atas konten */
+    transition: width 0.5s ease, opacity 0.5s ease; /* Animasi opacity untuk keluar masuk */
+    z-index: 10;
     overflow-x: hidden;
 }
 
@@ -86,7 +86,7 @@ nav ul li {
 }
 
 nav ul li:hover {
-    background-color: #ff5722; /* Memberikan efek hover pada item menu */
+    background-color: #ff5722;
 }
 
 nav ul li a {
@@ -98,7 +98,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #ff7f50; /* Mengubah warna teks saat hover */
+    color: #ff7f50;
 }
 
 /* Animasi pada tombol Hamburger */
@@ -129,9 +129,9 @@ nav ul li a:hover {
 }
 
 #hero h2 {
-    font-size: 3.5em; /* Menambah ukuran font untuk heading utama */
+    font-size: 3.5em;
     margin-bottom: 20px;
-    text-transform: uppercase; /* Membuat teks lebih tegas */
+    text-transform: uppercase;
 }
 
 #hero p {
@@ -151,7 +151,7 @@ nav ul li a:hover {
 
 .cta-btn:hover {
     background-color: #ff5722;
-    transform: translateY(-5px); /* Memberikan efek angkat saat hover */
+    transform: translateY(-5px);
 }
 
 /* Animasi Fade-In pada Header */
@@ -173,7 +173,7 @@ header {
     padding: 50px 20px;
     text-align: center;
     opacity: 0;
-    animation: fadeIn 1s forwards; /* Animasi fade-in untuk seluruh bagian produk */
+    animation: fadeIn 1s forwards;
     margin: 100px;
 }
 
@@ -189,7 +189,7 @@ header {
     z-index: -1;
 }
 
-/* Animasi Fade-In untuk Product Section */
+/* Animasi Fade-In Product Section */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -225,11 +225,11 @@ header {
     gap: 20px;
     flex-wrap: wrap;
     opacity: 0;
-    animation: fadeUp 1s 1s forwards; /* Animasi muncul dari bawah untuk container produk */
+    animation: fadeUp 1s 1s forwards;
 }
 
 .product {
-    background-color: #fff; /* Menggunakan putih agar lebih cerah */
+    background-color: #fff;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -237,9 +237,9 @@ header {
     width: 300px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     height: 400px;
-    margin-bottom: 30px; /* Memberi jarak bawah agar tidak terlalu rapat */
+    margin-bottom: 30px;
     opacity: 0;
-    animation: fadeUp 1s 1.5s forwards; /* Animasi muncul dari bawah untuk produk */
+    animation: fadeUp 1s 1.5s forwards;
 }
 
 .product:hover {
@@ -327,12 +327,12 @@ header {
 /* About Section */
 #about {
     padding: 50px 20px;
-    background: linear-gradient(135deg, #1e3d58, #3b6f8f); /* Gradasi biru */
+    background: linear-gradient(135deg, #1e3d58, #3b6f8f);
     color: white;
     text-align: center;
     position: relative;
     opacity: 0;
-    animation: fadeIn 1s forwards; /* Animasi fade-in untuk seluruh About */
+    animation: fadeIn 1s forwards;
 }
 
 #about::before {
@@ -362,9 +362,9 @@ header {
     font-weight: 600;
     margin-bottom: 20px;
     text-transform: uppercase;
-    color: #fff; /* Pastikan warna judul tetap putih */
+    color: #fff;
     opacity: 0;
-    animation: fadeUp 1s 0.5s forwards; /* Animasi muncul dari bawah */
+    animation: fadeUp 1s 0.5s forwards;
 }
 
 /* Animasi Muncul dari Bawah */
@@ -384,9 +384,9 @@ header {
     margin-bottom: 30px;
     line-height: 1.6;
     font-weight: 300;
-    color: #f4f4f4; /* Warna teks intro lebih terang */
+    color: #f4f4f4;
     opacity: 0;
-    animation: fadeUp 1s 1s forwards; /* Animasi muncul dari bawah */
+    animation: fadeUp 1s 1s forwards;
 }
 
 /* Card Layout for Vision, Mission, Values */
