@@ -491,11 +491,6 @@ a:focus {
   object-fit: contain;
 }
 
-.slider_section .img-box img {
-  width: 100%;
-  -webkit-animation: upDown 5s infinite;
-          animation: upDown 5s infinite;
-}
 
 @-webkit-keyframes upDown {
   0% {
