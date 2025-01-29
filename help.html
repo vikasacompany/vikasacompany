@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="shortcut icon" href="images/favicon.png" type="">
+
+  <title> Vikasa </title>
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+  <!--font awesome style-->
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+
+  <!-- Custom CSS for Help menu animation -->
+  <style>
+    .nav-item .nav-link.active {
+      color: #ffffff !important;
+      background-color: #007bff !important;
+      transition: background-color 0.3s ease;
+    }
+    .nav-item .nav-link {
+      transition: background-color 0.3s ease;
+    }
+    .support_section {
+      background-color: #f8f9fa;
+      padding: 50px 0;
+    }
+    .support_section .box {
+      border: 1px solid #ddd;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+
+<body class="sub_page">
+
+  <div class="hero_area">
+    <div class="hero_bg_box">
+      <div class="bg_img_box">
+        <img src="images/hero-bg.png" alt="">
+      </div>
+    </div>
+
+<!-- header section starts -->
+<header class="header_section">
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg custom_nav-container">
+      <!-- Logo dan nama perusahaan -->
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="images/vikasa-logo.png" alt="Vikasa Logo" class="logo" />
+        <span>Vikasa</span>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto"> <!-- Menambahkan ml-auto untuk memindahkan menu ke kanan -->
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="product.html">Product</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="team.html">Team</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="help.html">Help <span class="sr-only">(current)</span> </a>
+          </li>
+          <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" id="searchInput">
+            <button class="btn my-2 my-sm-0 nav_search-btn" type="submit">
+              <i class="fa fa-search" aria-hidden="true"></i>
+            </button>
+          </form>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- end header section -->
+
+    <style>
+      /* Membuat latar belakang lebih terang untuk support section */
+      .support_section {
+        background-color: #00204c; /* Biru muda */
+        padding: 50px 0;
+      }
+    
+      /* Kontainer untuk tiga kotak di atas */
+      .support_section .support_container {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px; /* Memberikan jarak antar kotak */
+        flex-wrap: wrap; /* Membuat kotak tetap rapi meski layar lebih kecil */
+      }
+    
+      /* Setiap box memiliki latar belakang biru solid */
+      .support_section .box {
+        background-color: #0056b3;
+        color: white;
+        border: none;
+        padding: 20px;
+        width: 30%; /* Setiap kotak akan memiliki lebar 30% dari kontainer */
+        text-align: center;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+        transition: transform 0.3s ease;
+      }
+    
+      /* Efek hover pada kotak */
+      .support_section .box:hover {
+        transform: translateY(-8px); /* Kotak akan sedikit terangkat */
+      }
+    
+      /* Mengatur gambar dalam box agar terlihat lebih pas */
+      .support_section .box .img-box img {
+        max-width: 70%; /* Ukuran gambar disesuaikan agar tidak terlalu besar */
+        margin-bottom: 15px;
+      }
+    
+      /* Mengatur teks dalam box */
+      .support_section .box h5 {
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+    
+      .support_section .box p {
+        font-size: 14px;
+      }
+    
+      /* Membuat jarak lebih banyak antara judul dan kotak */
+      .support_section .heading_container {
+        margin-bottom: 40px; /* Menambahkan jarak antara heading dan kotak-kotak */
+      }
+    
+      /* Tampilan tombol */
+      .btn-box a {
+        background-color: #0056b3;
+        color: white;
+        padding: 12px 30px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+        display: inline-block;
+        margin-top: 30px;
+      }
+    
+      /* Efek hover pada tombol */
+      .btn-box a:hover {
+        background-color: #0056b3;
+      }
+    </style>
+    
+    <!-- support section -->
+    <section class="support_section layout_padding">
+      <div class="container">
+        <div class="heading_container heading_center">
+          <h2>
+            <span class="need-text">Need</span> <span class="support-text">Support</span>
+          </h2>
+        </div>
+        <div class="support_container">
+          <div class="box">
+            <div class="img-box">
+              <img src="images/support1.png" alt="">
+            </div>
+            <div class="detail-box">
+              <h5>24/7 Customer Support</h5>
+              <p>Our dedicated support team is available around the clock to assist you with any issues.</p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="img-box">
+              <img src="images/support2.png" alt="">
+            </div>
+            <div class="detail-box">
+              <h5>Instant Assistance</h5>
+              <p>Get immediate assistance through live chat, phone, or email. We respond quickly to minimize disruptions.</p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="img-box">
+              <img src="images/support3.png" alt="">
+            </div>
+            <div class="detail-box">
+              <h5>Expert Guidance</h5>
+              <p>Our experts provide in-depth product knowledge and practical solutions to your issues.</p>
+            </div>
+          </div>
+        </div>
+        <div class="btn-box">
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSd0qhhAc9PRIcR20OXDRrmp2uFAx3irmolTAql3BlC4_YGAMg/viewform?usp=sharing">
+            Contact Support
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- end support section -->
+
+    <style>
+      /* Menambahkan styling untuk footer agar berada di bawah */
+      .footer_section {
+        background-color: #ffffff;
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+      }
+    
+      /* Mengatur halaman agar footer selalu di bawah */
+      body {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        margin: 0;
+      }
+    
+      /* Mengatur konten utama untuk mengambil ruang yang tersisa */
+      .content {
+        flex-grow: 1;
+      }
+    </style>
+    
+    <!-- Konten utama di dalam body -->
+    <body class="sub_page">
+      <div class="hero_area">
+        <!-- Isi bagian hero di sini -->
+      </div>
+    
+      <!-- Isi konten utama lainnya -->
+      <div class="content">
+        <!-- Bagian utama yang ada dalam website -->
+      </div>
+    
+  <!-- info section -->
+
+  <section class="info_section layout_padding2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-lg-3 info_col">
+          <div class="info_contact">
+            <h4>
+              Address
+            </h4>
+            <div class="contact_link_box">
+              <a href="https://maps.app.goo.gl/D38uPPTvnAD8N1Tg7">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <span>
+                  SMKN 20 Jakarta
+                </span>
+              </a>
+              <a href="">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <span>
+                  Call +01 1234567890
+                </span>
+              </a>
+              <a href="">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <span>
+                  vikasacompany20@gmail.com
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="info_social">
+            <a href="">
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+            <a href="">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+            <a href="">
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.instagram.com/vikasa_id?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 info_col">
+          <div class="info_detail">
+            <h4>
+              Info
+            </h4>
+            <p>
+              Vikasa is committed to delivering innovative solutions for modern travelers, offering smart products and seamless experiences designed to enhance every journey.
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-2 mx-auto info_col">
+          <div class="info_link_box">
+            <h4>
+              Links
+            </h4>
+            <div class="info_links">
+              <a class="active" href="index.html">
+                Home
+              </a>
+              <a class="" href="about.html">
+                About
+              </a>
+              <a class="" href="product.html">
+                Product
+              </a>
+              <a class="" href="team.html">
+                Team
+              </a>
+              <a class="" href="help.html">
+                Help
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 info_col ">
+          <h4>
+            Get Updates
+          </h4>
+          <form action="#">
+            <input type="email" placeholder="Your email address" required />
+            <button type="submit">
+              Subscribe Now
+            </button>
+          </form>          
+          
+  </section>
+
+  <!-- end info section -->
+
+  <!-- footer section -->
+  <section class="footer_section">
+    <div class="container">
+      <p>
+        &copy; <span id="displayYear"></span> All Rights Reserved By Vikasa Company
+      </p>
+    </div>
+  </section>
+  <!-- footer section -->
+
+  <!-- jQery -->
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <!-- popper js -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <!-- bootstrap js -->
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <!-- owl slider -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+  </script>
+  <!-- custom js -->
+  <script type="text/javascript" src="js/custom.js"></script>
+  <!-- Google Map -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
+  </script>
+  <!-- End Google Map -->
+
+</body>
+
+</html>
