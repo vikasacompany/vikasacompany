@@ -1,9 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@300;400;600;700&display=swap");
 body {
   font-family: "Open Sans", sans-serif;
-  color: #0c0c0c;
+  color: #000000;
   background-color: #ffffff;
   overflow-x: hidden;
+}
+
+.support_section .heading_container h2 {
+  color: black; /* Warna teks "Need Support" jadi hitam */
+}
+
+.support_section .heading_container h2 span {
+  color: white !important; /* Warna teks "Support" tetap putih */
 }
 
 .layout_padding {
@@ -387,7 +395,79 @@ a:focus {
   top: 0;
 }
 
+.nav_search-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+}
+
+.nav_search-btn:hover {
+  background-color: #0056b3;
+}
+
+.form-control {
+  width: 250px;
+  margin-right: 10px;
+}
+
 /* end header section */
+
+.search-results {
+  margin-top: 10px;
+  text-align: left;
+  font-size: 16px;
+  color: #333;
+}
+
+.search-results div {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.search-results div:hover {
+  background-color: #f0f0f0;
+}
+
+/* Styling untuk Customer Support Icon */
+.support-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #007bff;
+  border-radius: 50%; /* Ini memastikan bentuknya bulat */
+  width: 60px; /* Menentukan ukuran lebar */
+  height: 60px; /* Menentukan ukuran tinggi yang sama */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.support-icon a {
+  color: white;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+.support-icon:hover {
+  background-color: #0056b3;
+  cursor: pointer;
+  transform: scale(1.1); /* Membesarkan sedikit saat hover */
+}
+
+.support-icon:active {
+  transform: scale(0.95); /* Membuat ikon sedikit lebih kecil saat diklik */
+}
+
+.support-icon:hover a {
+  color: #f7f7f7; /* Warna ikon berubah saat hover */
+}
+
+.support-icon:active a {
+  color: #007bff; /* Warna ikon berubah saat diklik */
+}
 
 /* slider section */
 .slider_section {
@@ -549,88 +629,7 @@ a:focus {
   background-color: #00bbf0;
 }
 
-/* Service Section */
-.service_section {
-  position: relative;
-}
-
-.service_section .box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  margin-top: 45px;
-  background-color: #f8f8f9;
-  padding: 20px;
-  border-radius: 5px;
-}
-
-.service_section .box .img-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  width: 125px;
-  min-width: 75px;
-  height: 75px;
-  margin-bottom: 15px;
-}
-
-.service_section .box .img-box img {
-  max-width: 100%;
-  max-height: 100%;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
-
-.service_section .box .detail-box h5 {
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-.service_section .box .detail-box a {
-  color: #00204a;
-  font-weight: 600;
-}
-
-.service_section .box .detail-box a:hover {
-  color: #00bbf0;
-}
-
-.service_section .btn-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-top: 45px;
-}
-
-.service_section .btn-box a {
-  display: inline-block;
-  padding: 10px 45px;
-  background-color: #00bbf0;
-  color: #ffffff;
-  border-radius: 0;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-  border: none;
-}
-
-.service_section .btn-box a:hover {
+.product_section .detail-box a:hover {
   background-color: #007fa4;
 }
 
@@ -678,80 +677,6 @@ a:focus {
   background-color: #007fa4;
 }
 
-/* Why Section */
-.why_section .box {
-  margin-top: 45px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-}
-
-.why_section .box .img-box {
-  margin-bottom: 20px;
-  width: 120px;
-  height: 120px;
-  min-width: 120px;
-  min-height: 120px;
-  border-radius: 100%;
-  border: 5px solid #00204a;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.why_section .box .img-box img {
-  width: 55px;
-  height: auto;
-  fill: #00204a;
-}
-
-.why_section .box h5 {
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.why_section .box p {
-  margin-bottom: 0;
-}
-
-.why_section .btn-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-top: 45px;
-}
-
-.why_section .btn-box a {
-  display: inline-block;
-  padding: 10px 45px;
-  background-color: #00bbf0;
-  color: #ffffff;
-  border-radius: 0;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-  border: none;
-}
-
-.why_section .btn-box a:hover {
-  background-color: #007fa4;
-}
 /*team section */
 .team_section {
   text-align: center;
@@ -794,12 +719,14 @@ a:focus {
 
 .team_section .team_container .box .img-box img {
   width: 120px;
-  border-radius: 100%;
+  height: 120px; /* Pastikan tinggi dan lebar sama agar bulat */
+  object-fit: cover; /* Memastikan gambar terpotong dengan baik */
+  border-radius: 50%; /* 100% juga bisa untuk lingkaran */
   border: 5px solid #ffffff;
 }
 
 .team_section .team_container .box .detail-box {
-  margin: 25px 0;
+  margin: 5px 0;
 }
 
 .team_section .team_container .box .detail-box h5 {
@@ -828,6 +755,57 @@ a:focus {
 }
 
 /*team section end*/
+
+<style>
+
+.support_section .heading_container h2 span {
+  color: white !important;
+}
+
+  /* Ganti latar belakang bagian Support dengan warna biru muda */
+  .support_section {
+    background-color: #e9f7fc; /* Biru muda untuk latar belakang */
+    padding: 50px 0;
+  }
+
+  /* Membuat box dengan warna solid biru dan ruang lebih lebar */
+  .support_section .box {
+    background-color: #007bff; /* Biru solid */
+    color: white; /* Teks putih agar kontras */
+    border: none;
+    padding: 30px;
+    margin-bottom: 30px; /* Memberikan ruang antar box */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Efek bayangan ringan */
+    text-align: center; /* Menyelaraskan teks */
+    transition: transform 0.3s ease;
+  }
+
+  /* Efek hover pada kotak */
+  .support_section .box:hover {
+    transform: translateY(-8px);
+  }
+
+  .btn-box a {
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    margin-top: 20px;
+    color: white; /* Ubah warna teks menjadi putih */
+}
+
+  /* Efek hover pada tombol */
+  .btn-box a:hover {
+    background-color: #0056b3;
+  }
+
+  /* Pengaturan gambar dalam box agar lebih pas */
+  .support_section .box .img-box img {
+    max-width: 80%; /* Membuat gambar lebih kecil agar tidak terlalu besar */
+    margin-bottom: 20px; /* Memberikan jarak antara gambar dan teks */
+  }
+</style>
+
 /* client section start */
 .client_section .heading_container {
   margin-bottom: 30px;
